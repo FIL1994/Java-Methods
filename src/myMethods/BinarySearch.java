@@ -12,6 +12,22 @@ public class BinarySearch {
         
     }
     
+    public static int search(int[] intArray, int key){
+        int low = 0;
+        int high = intArray.length - 1;
+        
+        while(low <= high){
+            int middle = (low+high)/2;
+            if(key < intArray[middle])
+                high = middle-1;
+            else if(key > intArray[middle])
+                low = middle + 1;
+            else
+                return middle;
+        }
+        return -1;
+    }
+    
     public static boolean exists(int[] intArray, int key){
         Arrays.sort(intArray);
         int low = 0; //beginning of list to search
