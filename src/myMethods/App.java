@@ -47,6 +47,11 @@ public class App {
         for (int i = 0; i < inputArray.length; i++) {
             System.out.println(inputArray[i]);
         }
+        
+        System.out.println("\n");
+        int[] inputArray2 = {12, 2134, 342, 13, 23478};
+        QuickSort.quickSort(inputArray2, 0, inputArray2.length - 1);
+        System.out.println(Arrays.toString(inputArray2));
     }
 
 }
