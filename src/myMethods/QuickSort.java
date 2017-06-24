@@ -37,7 +37,6 @@ public class QuickSort {
         int iVal = inputArray[i + 1];
         inputArray[end] = iVal;
         inputArray[i + 1] = pivot;
-        
         return i + 1;
     }
 }
