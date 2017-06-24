@@ -52,6 +52,9 @@ public class App {
         int[] inputArray2 = {12, 2134, 342, 13, 23478};
         QuickSort.quickSort(inputArray2, 0, inputArray2.length - 1);
         System.out.println(Arrays.toString(inputArray2));
+        
+        System.out.println("\n|-- Asynchronous Section --|");
+        Asynchronous async = new Asynchronous();
+        
     }
-
 }
